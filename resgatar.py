@@ -51,7 +51,7 @@ def resgatar15():
         mudfic.click()
         time.sleep(0.5)
         driver.quit()
-        print(f"\033[32mUser: {user} | Passord: {senha} | Progresso: {round((nbglla.index(user)+1)*100/len(nbglla), 2)}% &{nbglla.index(user)+1}/{len(nbglla)} | ProgressoConta: 2/2 | Estado: Completo\033[33m")
+        print(f"\033[32mUser: {user} | Passord: {senha} | Progresso: {round((nbglla.index(user)+1)*100/len(nbglla), 2)}% &{nbglla.index(user)+1}/{len(nbglla)} | ProgressoConta: 2/2 | Estado: Completo\033[m")
         print("")
         print("=-"*30)
         print("")
