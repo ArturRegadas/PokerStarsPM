@@ -53,3 +53,6 @@ elif escolha =="4":
 else:
       print("\033[31mENCERRADO\033[33m")
 
+print("")
+nadadasdada=input("FINALIZAR: ")
+
