@@ -68,7 +68,7 @@ def entra_na_torneira1(link_torneio):
         time.sleep(1)
 
         driver.quit()
-        print(f"\033[32mUser: {iosenh} | Passord: {senha} | Progresso: {round((bglla.index(iosenh)+1)*100/len(bglla), 2)}% &{bglla.index(iosenh)+1}/{len(bglla)} | ProgressoConta: 2/2 | Estado: Completo\033[33m")
+        print(f"\033[32mUser: {iosenh} | Passord: {senha} | Progresso: {round((bglla.index(iosenh)+1)*100/len(bglla), 2)}% &{bglla.index(iosenh)+1}/{len(bglla)} | ProgressoConta: 2/2 | Estado: Completo\033[m")
         
         print("")
         print("=-"*30)
@@ -145,7 +145,7 @@ def entra_na_torneira2(link_torneio):
         time.sleep(1)
 
         driver.quit()
-        print(f"\033[32mUser: {iosenh} | Passord: {senha} | Progresso: {round((bglla.index(iosenh)+1)*100/len(bglla), 2)}% &{bglla.index(iosenh)+1}/{len(bglla)} | ProgressoConta: 2/2 | Estado: Completo\033[33m")
+        print(f"\033[32mUser: {iosenh} | Passord: {senha} | Progresso: {round((bglla.index(iosenh)+1)*100/len(bglla), 2)}% &{bglla.index(iosenh)+1}/{len(bglla)} | ProgressoConta: 2/2 | Estado: Completo\033[m")
         print("")
         print("=-"*30)
         print("")
