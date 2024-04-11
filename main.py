@@ -46,7 +46,7 @@ elif escolha == "2":
 elif escolha == "3":
       entrartorneio.entra_na_torneira2(str(input("LINK TORNEIO: ")))
 
-elif senha =="4":
+elif escolha =="4":
       print("EXECUTANDO RESGATAR_15")
       resgatar.resgatar15()
 
