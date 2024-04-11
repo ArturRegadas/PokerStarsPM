@@ -1,4 +1,3 @@
-
 def resgatar15():
     import time
     from selenium import webdriver
@@ -44,7 +43,7 @@ def resgatar15():
         signin = driver.find_element(by='xpath', value='//*[@class="_f92fbce _cb4cb62 _18f4de1 _f7a0730"]')
         signin.click()
         time.sleep(1)
-        print(f"User: {user} | Passord: {senha} | Progresso: {nbglla.index(user)+1*100/len(nbglla)}% &{nbglla.index(user)+1}/{len(nbglla)} | ProgressoConta: 1/2 | Estado: Estage 1")
+        print(f"User: {user} | Passord: {senha} | Progresso: {round((nbglla.index(user)+1)*100/len(nbglla), 2)}% &{nbglla.index(user)+1}/{len(nbglla)} | ProgressoConta: 1/2 | Estado: Estage 1")
 
         driver.get('https://cashier.pokerstars.com/cashier/?language=en&country=BR&site=1&platform=Web&timezone=1&applePaySupported=false&brand=PokerStars&TimeZoneId=1&u=BSVAXI&hermesappkey=3f85e4c7-6d13-4d37-9f53-00f01da87bff#/play-money')
         time.sleep(3)
@@ -52,5 +51,7 @@ def resgatar15():
         mudfic.click()
         time.sleep(0.5)
         driver.quit()
-        print(f"\033[32mUser: {user} | Passord: {senha} | Progresso: {nbglla.index(user)+1*100/len(nbglla)}% &{nbglla.index(user)+1}/{len(nbglla)} | ProgressoConta: 2/2 | Estado: Completo\033[33m")
+        print(f"\033[32mUser: {user} | Passord: {senha} | Progresso: {round((nbglla.index(user)+1)*100/len(nbglla), 2)}% &{nbglla.index(user)+1}/{len(nbglla)} | ProgressoConta: 2/2 | Estado: Completo\033[33m")
+        print("")
         print("=-"*30)
+        print("")
