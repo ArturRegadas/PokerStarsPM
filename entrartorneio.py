@@ -45,7 +45,7 @@ def entra_na_torneira1(link_torneio):
         signin.click()
         time.sleep(1)
 
-        print(f"User: {iosenh} | Passord: {senha} | Progresso: {bglla.index(iosenh)+1*100/len(bglla)}% &{bglla.index(iosenh)+1}/{len(bglla)} | ProgressoConta: 1/2 | Estado: Estage 1")
+        print(f"User: {iosenh} | Passord: {senha} | Progresso: {round((bglla.index(iosenh)+1)*100/len(bglla), 2)}% &{bglla.index(iosenh)+1}/{len(bglla)} | ProgressoConta: 1/2 | Estado: Estage 1")
 
 
         driver.get(link_torneio)
@@ -68,8 +68,11 @@ def entra_na_torneira1(link_torneio):
         time.sleep(1)
 
         driver.quit()
-        print(f"\033[32mUser: {iosenh} | Passord: {senha} | Progresso: {bglla.index(iosenh)+1*100/len(bglla)}% &{bglla.index(iosenh)+1}/{len(bglla)} | ProgressoConta: 2/2 | Estado: Completo\033[33m")
+        print(f"\033[32mUser: {iosenh} | Passord: {senha} | Progresso: {round((bglla.index(iosenh)+1)*100/len(bglla), 2)}% &{bglla.index(iosenh)+1}/{len(bglla)} | ProgressoConta: 2/2 | Estado: Completo\033[33m")
+        
+        print("")
         print("=-"*30)
+        print("")
 
 
 def entra_na_torneira2(link_torneio):
@@ -119,7 +122,7 @@ def entra_na_torneira2(link_torneio):
         signin.click()
         time.sleep(1)
 
-        print(f"User: {iosenh} | Passord: {senha} | Progresso: {bglla.index(iosenh)+1*100/len(bglla)}% &{bglla.index(iosenh)+1}/{len(bglla)} | ProgressoConta: 1/2 | Estado: Estage 1")
+        print(f"User: {iosenh} | Passord: {senha} | Progresso: {round((bglla.index(iosenh)+1)*100/len(bglla), 2)}% &{bglla.index(iosenh)+1}/{len(bglla)} | ProgressoConta: 1/2 | Estado: Estage 1")
 
 
         driver.get(link_torneio)
@@ -142,5 +145,7 @@ def entra_na_torneira2(link_torneio):
         time.sleep(1)
 
         driver.quit()
-        print(f"\033[32mUser: {iosenh} | Passord: {senha} | Progresso: {bglla.index(iosenh)+1*100/len(bglla)}% &{bglla.index(iosenh)+1}/{len(bglla)} | ProgressoConta: 2/2 | Estado: Completo\033[33m")
+        print(f"\033[32mUser: {iosenh} | Passord: {senha} | Progresso: {round((bglla.index(iosenh)+1)*100/len(bglla), 2)}% &{bglla.index(iosenh)+1}/{len(bglla)} | ProgressoConta: 2/2 | Estado: Completo\033[33m")
+        print("")
         print("=-"*30)
+        print("")
