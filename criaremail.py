@@ -72,7 +72,7 @@ def criar_o_email(numemais):
         pyautogui.keyDown("Esc")
         time.sleep(0.5)
 
-        print(f"User: {yahoo} | Passord {senha} | Progresso: {i+1*100/numemais}% & {i+1}/{numemais} | ProgressoConta: 1/4 | Estado: Estage 1")
+        print(f"User: {yahoo} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 1/4 | Estado: Estage 1")
 
 
         driver.get('https://www.guerrillamail.com') 
@@ -101,7 +101,7 @@ def criar_o_email(numemais):
             with open("logins.txt", "a") as arquivo:
                 arquivo.write(guerrilha+"\n")
 
-        print(f"User: {yahoo} | Passord {senha} | Progresso: {i+1*100/numemais}% & {i+1}/{numemais} | ProgressoConta: 2/4 | Estado: Estage 2")
+        print(f"User: {yahoo} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 2/4 | Estado: Estage 2")
 
         #colocar em um proxy ou um vpn
         driver.get('https://www.pokerstars.com/signup/')
@@ -129,7 +129,7 @@ def criar_o_email(numemais):
         conf2.click()
 
         time.sleep(5)
-        print(f"User: {yahoo} | Passord {senha} | Progresso: {i+1*100/numemais}% & {i+1}/{numemais} | ProgressoConta: 3/4 | Estado: Estage 3")
+        print(f"User: {yahoo} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 3/4 | Estado: Estage 3")
 
         #guerrilha=nome.user
         #guerrilha_senha=senha.user
@@ -146,5 +146,7 @@ def criar_o_email(numemais):
         club1.click()
         time.sleep(1)
         driver.quit()
-        print(f"\033[32mUser: {yahoo} | Passord {senha} | Progresso: {i+1*100/numemais}% & {i+1}/{numemais} | ProgressoConta: 4/4 | Estado: Completo\033[33m")
+        print(f"\033[32mUser: {yahoo} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 4/4 | Estado: Completo\033[33m")
+        print("")
         print("=-"*30)
+        print("")
