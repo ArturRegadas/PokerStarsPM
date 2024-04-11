@@ -51,7 +51,7 @@ elif escolha =="4":
       resgatar.resgatar15()
 
 else:
-      print("\033[31mENCERRADO\033[33m")
+      print("\033[31mENCERRADO\033[m")
 
 print("")
 nadadasdada=input("FINALIZAR: ")
