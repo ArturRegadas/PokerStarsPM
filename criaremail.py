@@ -146,7 +146,7 @@ def criar_o_email(numemais):
         club1.click()
         time.sleep(1)
         driver.quit()
-        print(f"\033[32mUser: {yahoo} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 4/4 | Estado: Completo\033[33m")
+        print(f"\033[32mUser: {yahoo} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 4/4 | Estado: Completo\033[m")
         print("")
         print("=-"*30)
         print("")
