@@ -2,7 +2,8 @@ import criaremail
 import entrartorneio
 import resgatar
 
-print(f"""
+
+print(f"""\033[m
       
 =================================================================
       
@@ -28,7 +29,6 @@ Oque voce deseja fazer:
 =================================================================
       """)
 
-senha=(str(input("SENHA: ")))
 escolha=str(input("ESCOLHA: "))
 print("")
 
@@ -41,12 +41,15 @@ elif escolha=="1":
       criaremail.criar_o_email(int(input("QUANTOS EMAIS CRIAR: ")))
 
 elif escolha == "2":
+
       entrartorneio.entra_na_torneira1(str(input("LINK TORNEIO: ")))
 
 elif escolha == "3":
+
       entrartorneio.entra_na_torneira2(str(input("LINK TORNEIO: ")))
 
 elif escolha =="4":
+
       print("EXECUTANDO RESGATAR_15")
       resgatar.resgatar15()
 

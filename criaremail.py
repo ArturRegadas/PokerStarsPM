@@ -28,7 +28,14 @@ def criar_o_email(numemais):
             yahoo=yahoo+random.choice(caracteres)
         yahoo=yahoo+"@sharklasers.com"
 
-        
+        guerrilha=""
+        for i in range(0,12):    
+            guerrilha=guerrilha+random.choice(caracteres)
+
+        with open("logins.txt", "r") as arquivo:
+            complicado=arquivo.read()
+            complicado=complicado.split("\n")
+
 
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_experimental_option("mobileEmulation", mobile_emulation)
@@ -42,20 +49,20 @@ def criar_o_email(numemais):
         pyautogui.moveTo(1025,320)
         time.sleep(0.5)
         pyautogui.click()
-        time.sleep(0.1)
+        time.sleep(0.3)
         pyautogui.moveTo(590,240)
-        time.sleep(0.5)
+        time.sleep(1)
         pyautogui.click()
         pyautogui.moveTo(900,60)
         time.sleep(4)
         pyautogui.click()
         time.sleep(0.1)
         pyautogui.keyDown("Tab")
-        time.sleep(0.1)
+        time.sleep(0.3)
         pyautogui.keyDown("Tab")
-        time.sleep(0.1)
+        time.sleep(0.3)
         pyautogui.keyDown("Enter")
-        time.sleep(0.1)
+        time.sleep(0.3)
         pyautogui.moveTo(720,430)
         time.sleep(0.5)
         pyautogui.click()
@@ -63,7 +70,7 @@ def criar_o_email(numemais):
         pyautogui.click()
         time.sleep(0.5)
         pyautogui.click()
-        time.sleep(0.1)
+        time.sleep(0.3)
         pyautogui.moveTo(720,365)
         time.sleep(0.5)
         pyautogui.click()
@@ -72,7 +79,7 @@ def criar_o_email(numemais):
         pyautogui.keyDown("Esc")
         time.sleep(0.5)
 
-        print(f"User: {yahoo} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 1/4 | Estado: Estage 1")
+        print(f"User: {guerrilha} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 1/4 | Estado: Estage 1")
 
 
         driver.get('https://www.guerrillamail.com') 
@@ -85,13 +92,7 @@ def criar_o_email(numemais):
         time.sleep(0.5)
         pyautogui.click()
         
-        guerrilha=""
-        for i in range(0,12):    
-            guerrilha=guerrilha+random.choice(caracteres)
-
-        with open("logins.txt", "r") as arquivo:
-            complicado=arquivo.read()
-            complicado=complicado.split("\n")
+        
 
         if len(complicado)-1 > 250:
             with open("login2.txt", "a") as arquivo:
@@ -101,11 +102,11 @@ def criar_o_email(numemais):
             with open("logins.txt", "a") as arquivo:
                 arquivo.write(guerrilha+"\n")
 
-        print(f"User: {yahoo} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 2/4 | Estado: Estage 2")
+        print(f"User: {guerrilha} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 2/4 | Estado: Estage 2")
 
         #colocar em um proxy ou um vpn
         driver.get('https://www.pokerstars.com/signup/')
-
+        time.sleep(1)
 
         a1 = driver.find_element(by='xpath', value='//*[@id="onetrust-accept-btn-handler"]')
         a1.click()
@@ -119,7 +120,7 @@ def criar_o_email(numemais):
         time.sleep(0.5)     
 
         pyautogui.keyDown("Tab")
-        time.sleep(2)
+        time.sleep(3)
         pyautogui.click()
         time.sleep(1)
         conf1=driver.find_element(by='xpath', value='//*[@class="_0d9eedb"]')
@@ -129,7 +130,7 @@ def criar_o_email(numemais):
         conf2.click()
 
         time.sleep(5)
-        print(f"User: {yahoo} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 3/4 | Estado: Estage 3")
+        print(f"User: {guerrilha} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 3/4 | Estado: Estage 3")
 
         #guerrilha=nome.user
         #guerrilha_senha=senha.user
@@ -146,7 +147,7 @@ def criar_o_email(numemais):
         club1.click()
         time.sleep(1)
         driver.quit()
-        print(f"\033[32mUser: {yahoo} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 4/4 | Estado: Completo\033[m")
+        print(f"\033[32mUser: {guerrilha} | Passord {senha} | Progresso: {round((i+1)*100/numemais, 2)}% & {i+1}/{numemais} | ProgressoConta: 4/4 | Estado: Completo\033[m")
         print("")
         print("=-"*30)
         print("")

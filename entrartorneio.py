@@ -4,6 +4,8 @@ def entra_na_torneira1(link_torneio):
     from selenium.webdriver.chrome.options import Options
     from selenium.webdriver.common.keys import Keys
 
+    time.sleep(7)
+
     with open("credentials.txt", "r") as arquivo:
         numli=arquivo.read()
         numli=numli.split("\n")
@@ -80,6 +82,8 @@ def entra_na_torneira2(link_torneio):
     from selenium import webdriver
     from selenium.webdriver.chrome.options import Options
     from selenium.webdriver.common.keys import Keys
+
+    time.sleep(7)
 
     with open("credentials.txt", "r") as arquivo:
         numli=arquivo.read()
