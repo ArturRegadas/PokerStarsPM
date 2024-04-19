@@ -1,4 +1,3 @@
-import criaremail
 import entrartorneio
 import resgatar
 
@@ -19,11 +18,9 @@ print(f"""\033[m
             
 Oque voce deseja fazer:
       
-[0] Inserir senha
-[1] Criar e colocar emails no club
-[2] Entrar no torneio (1)
-[3] Entrar no torneio (2)
-[4] Resgatar 15k*contas
+[1] Cadastrar email
+[2] Entrar no torneio 
+[3] Resgatar 15k*contas
 [!] Sair
       
 =================================================================
@@ -32,23 +29,21 @@ Oque voce deseja fazer:
 escolha=str(input("ESCOLHA: "))
 print("")
 
-if escolha == "0":
-      senha=str(input("SENHA: "))
-      with open("credentials.txt", "a") as arquivo:
-            arquivo.write(senha+"\n")
 
-elif escolha=="1":
-      criaremail.criar_o_email(int(input("QUANTOS EMAIS CRIAR: ")))
+if escolha=="1":
+      while True:
+            oemail=str(input("[!sair]email: "))
+            if oemail == "!":
+                  break
+            else:
+                  with open("logins.txt", "w") as arquivo:
+                        arquivo.write(oemail+"\n")
 
 elif escolha == "2":
 
       entrartorneio.entra_na_torneira1(str(input("LINK TORNEIO: ")))
 
-elif escolha == "3":
-
-      entrartorneio.entra_na_torneira2(str(input("LINK TORNEIO: ")))
-
-elif escolha =="4":
+elif escolha =="3":
 
       print("EXECUTANDO RESGATAR_15")
       resgatar.resgatar15()
